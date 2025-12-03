@@ -27,6 +27,12 @@ decathlon-crawling/
 - ✅ Generates **complete.csv** with all review data
 - ✅ Generates **summary.csv** with aggregated product statistics
 - ✅ Uses **Selenium** for automated browser-based scraping
+- ✅ **NEW: `review_info.py` extracts product detail sections:**
+  - 특징 및 장점 (Features & Benefits)
+  - 설명 (Description)
+  - 기술 정보 (Technical Information)
+  - 구성 (Composition)
+  - 추천 정보 (Recommendation)
 
 ---
 
@@ -80,8 +86,12 @@ PRODUCT_URLS = [
 ```bash
 python decathlon_scraper.py
 ```
+3. **Run the product info extractor:**
+```bash
+python review_info.py
+```
 
-3. **Find your data** in the `data/` folder:
+4. **Find your data** in the `data/` folder:
    - `complete.csv` - All individual reviews
    - `summary.csv` - Product summaries and statistics
 
